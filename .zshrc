@@ -100,3 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias artisan='php artisan'
+alias pest='./vendor/bin/pest'
+alias g='git'
+alias dc='docker-compose'
+alias cls='clear'
