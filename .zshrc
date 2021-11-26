@@ -100,8 +100,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
-alias artisan='php artisan'
-alias pest='./vendor/bin/pest'
 alias g='git'
+alias artisan='php artisan'
 alias dc='docker-compose'
 alias cls='clear'
+alias pest='./vendor/bin/pest'
+alias notepad='notepad.exe'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
