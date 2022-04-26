@@ -1,15 +1,8 @@
 {
+    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
         {
             "command": 
             {
@@ -27,10 +20,37 @@
         {
             "command": 
             {
+                "action": "commandPalette"
+            },
+            "keys": "ctrl+p"
+        },
+        {
+            "command": 
+            {
                 "action": "splitPane",
-                "split": "vertical"
+                "split": "right"
             },
             "keys": "ctrl+]"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+shift+t"
         },
         {
             "command": "find",
@@ -44,15 +64,11 @@
             "keys": "ctrl+comma"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
                 "action": "newTab"
             },
-            "keys": "ctrl+t"
+            "keys": "ctrl+n"
         },
         {
             "command": 
@@ -60,61 +76,41 @@
                 "action": "closeTab"
             },
             "keys": "ctrl+w"
+        },
+        {
+            "command": "openNewTabDropdown",
+            "keys": "ctrl+t"
         }
     ],
+    "alwaysOnTop": false,
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+    "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
     "disableAnimations": false,
-    "initialCols": 119,
-    "initialRows": 32,
-    "launchMode": "maximized",
+    "initialCols": 112,
+    "initialRows": 33,
+    "launchMode": "default",
     "profiles": 
     {
         "defaults": 
         {
-            "acrylicOpacity": 0.59999999999999998,
-            "cursorShape": "filledBox",
+            "backgroundImage": "desktopWallpaper",
+            "backgroundImageOpacity": 0.20000000000000001,
+            "cursorShape": "bar",
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font Mono",
                 "size": 12
             },
-            "startingDirectory": "C:/Users/iagob/Desktop"
+            "intenseTextStyle": "all",
+            "startingDirectory": "C:/Users/iagob/Desktop",
+            "useAcrylic": false
         },
         "list": 
         [
             {
-                "acrylicOpacity": 0.59999999999999998,
-                "commandline": "powershell.exe",
-                "font": 
-                {
-                    "face": "CaskaydiaCove Nerd Font Mono"
-                },
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-                "hidden": false,
-                "name": "Windows PowerShell"
-            },
-            {
-                "acrylicOpacity": 0.59999999999999998,
-                "font": 
-                {
-                    "face": "CaskaydiaCove Nerd Font Mono"
-                },
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
-                "hidden": false,
-                "name": "Ubuntu-20.04 - WSL",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\iagobruno",
-                "tabTitle": "Ubuntu-20.04 - WSL"
-            },
-            {
-                "acrylicOpacity": 0.5,
-                "backgroundImage": null,
-                "backgroundImageOpacity": 0.28000000000000003,
                 "bellStyle": "audible",
                 "colorScheme": "Brogrammer",
-                "commandline": "cmd.exe",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
                 "font": 
@@ -129,6 +125,28 @@
                 "useAcrylic": false
             },
             {
+                "colorScheme": "Brogrammer",
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font Mono"
+                },
+                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "hidden": false,
+                "name": "Ubuntu-20.04 - WSL",
+                "source": "Windows.Terminal.Wsl",
+                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\iago",
+                "tabTitle": "Ubuntu-20.04 - WSL"
+            },
+            {
+                "font": 
+                {
+                    "face": "CaskaydiaCove Nerd Font Mono"
+                },
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "hidden": false,
+                "name": "Windows PowerShell"
+            },
+            {
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
@@ -140,6 +158,12 @@
                 "hidden": false,
                 "icon": "%PROGRAMFILES%\\PostgreSQL\\postgresql.ico",
                 "name": "PostgreSQL command line"
+            },
+            {
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "source": "Windows.Terminal.PowershellCore"
             }
         ]
     },
