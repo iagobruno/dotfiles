@@ -1,6 +1,6 @@
 {
-    "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
+    "$help": "https://aka.ms/terminal-documentation",
     "actions": 
     [
         {
