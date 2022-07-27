@@ -16,11 +16,11 @@ ZSH_THEME="agnoster"
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
-# Uncomment the following line to use case-sensitive completion. 
+# Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable. 
+# Case-sensitive completion must be off. _ and - will be interchangeable.
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment one of the following lines to change the auto-update behavior
@@ -74,6 +74,7 @@ plugins=(
   git
   # https://github.com/zsh-users/zsh-autosuggestions
   zsh-autosuggestions
+  # zsh-syntax-highlighting
 )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
@@ -106,6 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias sial='sail'
 alias g='git'
 alias artisan='php artisan'
 alias dc='docker-compose'
@@ -113,6 +115,8 @@ alias cls='clear'
 alias pest='./vendor/bin/pest'
 alias notepad='notepad.exe'
 alias edit='notepad.exe'
+alias docker-kill='docker stop $(docker ps -q)'
+alias docker-cleanup='docker rm -f $(docker ps -a -q) && docker volume rm $(docker volume ls -q) && docker image rm $(docker image ls -q) && docker network rm $(docker network ls -q)'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
