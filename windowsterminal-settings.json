@@ -1,6 +1,6 @@
 {
-    "$schema": "https://aka.ms/terminal-profiles-schema",
     "$help": "https://aka.ms/terminal-documentation",
+    "$schema": "https://aka.ms/terminal-profiles-schema",
     "actions": 
     [
         {
@@ -25,6 +25,10 @@
             "keys": "ctrl+p"
         },
         {
+            "command": "find",
+            "keys": "ctrl+f"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -45,23 +49,19 @@
             "keys": "ctrl+v"
         },
         {
+            "command": 
+            {
+                "action": "openSettings"
+            },
+            "keys": "ctrl+comma"
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+shift+space"
         },
         {
             "command": "unbound",
             "keys": "ctrl+shift+t"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+f"
-        },
-        {
-            "command": 
-            {
-                "action": "openSettings"
-            },
-            "keys": "ctrl+comma"
         },
         {
             "command": 
@@ -83,26 +83,29 @@
         }
     ],
     "alwaysOnTop": false,
+    "alwaysShowTabs": true,
+    "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
     "disableAnimations": false,
-    "initialCols": 112,
-    "initialRows": 33,
-    "launchMode": "default",
+    "firstWindowPreference": "defaultProfile",
+    "initialCols": 118,
+    "initialRows": 35,
     "profiles": 
     {
         "defaults": 
         {
             "backgroundImage": "desktopWallpaper",
-            "backgroundImageOpacity": 0.20000000000000001,
+            "backgroundImageOpacity": 0.34000000000000002,
             "cursorShape": "bar",
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font Mono",
-                "size": 12
+                "size": 11
             },
             "intenseTextStyle": "all",
+            "opacity": 100,
             "startingDirectory": "C:/Users/iagob/Desktop",
             "useAcrylic": false
         },
@@ -125,6 +128,7 @@
                 "useAcrylic": false
             },
             {
+                "backgroundImageOpacity": 0.35000000000000003,
                 "colorScheme": "Brogrammer",
                 "font": 
                 {
