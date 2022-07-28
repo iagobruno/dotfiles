@@ -138,7 +138,7 @@
                 "hidden": false,
                 "name": "Ubuntu-20.04 - WSL",
                 "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "\\\\wsl$\\Ubuntu-20.04\\home\\iago",
+                "startingDirectory": "~",
                 "tabTitle": "Ubuntu-20.04 - WSL"
             },
             {
