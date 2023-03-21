@@ -1,25 +1,21 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "commandPalette"
             },
             "keys": "ctrl+shift+p"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "commandPalette"
             },
             "keys": "f1"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "commandPalette"
             },
             "keys": "ctrl+p"
@@ -29,16 +25,14 @@
             "keys": "ctrl+f"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "right"
             },
             "keys": "ctrl+]"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -49,8 +43,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "openSettings"
             },
             "keys": "ctrl+comma"
@@ -64,15 +57,13 @@
             "keys": "ctrl+shift+t"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab"
             },
             "keys": "ctrl+n"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "closeTab"
             },
             "keys": "ctrl+w"
@@ -92,15 +83,12 @@
     "firstWindowPreference": "defaultProfile",
     "initialCols": 118,
     "initialRows": 35,
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "backgroundImage": "desktopWallpaper",
             "backgroundImageOpacity": 0.34000000000000002,
             "cursorShape": "bar",
-            "font": 
-            {
+            "font": {
                 "face": "CaskaydiaCove Nerd Font Mono",
                 "size": 11
             },
@@ -109,15 +97,13 @@
             "startingDirectory": "C:/Users/iagob/Desktop",
             "useAcrylic": false
         },
-        "list": 
-        [
+        "list": [
             {
                 "bellStyle": "audible",
                 "colorScheme": "Brogrammer",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
+                "font": {
                     "face": "Cascadia Mono"
                 },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -130,20 +116,19 @@
             {
                 "backgroundImageOpacity": 0.35000000000000003,
                 "colorScheme": "Brogrammer",
-                "font": 
-                {
+                "font": {
                     "face": "CaskaydiaCove Nerd Font Mono"
                 },
-                "guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
+                "//guid": "{07b52e3e-de2c-5db4-bd2d-ba144ed6c273}",
                 "hidden": false,
                 "name": "Ubuntu-20.04 - WSL",
-                "source": "Windows.Terminal.Wsl",
+                "commandline": "wsl.exe -d Ubuntu",
+                "//source": "Windows.Terminal.Wsl",
                 "startingDirectory": "~",
                 "tabTitle": "Ubuntu-20.04 - WSL"
             },
             {
-                "font": 
-                {
+                "font": {
                     "face": "CaskaydiaCove Nerd Font Mono"
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -171,8 +156,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#000000",
             "black": "#1F1F1F",
