@@ -2,6 +2,10 @@
     display: none;
 }
 
+.split-view-container:has(:first-child.titlebar) > :nth-child(3) {
+    top: 0px !important;!importan;!importanr;!importanrt;!i;!;
+    height: 100% !important;!i;!;
+}
 
 /* Hide the ">" chevron icon */
 .codicon-tree-item-expanded:before {
