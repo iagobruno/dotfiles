@@ -16,3 +16,7 @@
 .quick-input-list, .quick-input-list .list_id_6 {
     min-height: 400px !important;
 }
+
+.titlebar {
+    display: none !important;
+}
