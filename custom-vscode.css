@@ -1,6 +1,6 @@
-/* .part.sidebar.right > div > div > div:nth-child(1) {
-    display: none !important;
-} */
+.split-view-view:has(:first-child.titlebar) {
+    display: none;
+}
 
 
 /* Hide the ">" chevron icon */
