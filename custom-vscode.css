@@ -1,26 +1,4 @@
 /* Project title's style at the top. */
-.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
-    border: none !important;
-    background: transparent !important;
-}
-
-/* Project Title */
-.titlebar-left {
-    justify-content: flex-end !important;
-    flex-grow: 0 !important;
-    width: 75px !important;
-}
-
-
-#command-blur {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .15);
-    top: 0;
-    left: 0;
-    backdrop-filter: blur(8px);
-}
 
 /* Command Palette */
 .quick-input-widget {
