@@ -7,6 +7,18 @@
     height: 100% !important;!i;!;
 }
 
+.sidebar .content {
+    height: 862px !important;
+}
+
+.activitybar .content {
+    height: 896px !important;
+}
+
+.editor .content {
+    height: 897.224px !important;
+}
+
 /* Hide the ">" chevron icon */
 .codicon-tree-item-expanded:before {
     display: none !important;
