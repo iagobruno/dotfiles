@@ -1,4 +1,4 @@
-.split-view-view:has(:first-child.titlebar) {
+/* .split-view-view:has(:first-child.titlebar) {
     display: none;
 }
 
@@ -18,6 +18,7 @@
 .editor .content {
     height: 897.224px !important;
 }
+ */
 
 /* Hide the ">" chevron icon */
 .codicon-tree-item-expanded:before {
@@ -25,16 +26,16 @@
 }
 
 /* File explorer action buttons */
-.monaco-workbench .part.sidebar .title-actions .actions-container {
+/* .monaco-workbench .part.sidebar .title-actions .actions-container {
     display: none;
 }
-
+ */
 /* Sidebar title */
-.composite.title h2 {
+/* .composite.title h2 {
     font-weight: bold !important;
     font-size: 11px !important;
     text-transform: uppercase;
-}
+} */
 
 /* .composite.title h2::before {
     display: inline-block;
@@ -42,33 +43,6 @@
     font-size: 1.1rem;
     content: '';
 } */
-
-
-/* Project title's style at the top. */
-.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
-    border: none !important;
-    background: transparent !important;
-}
-
-/* Project Title */
-.titlebar-left {
-    justify-content: flex-end !important;
-    flex-grow: 0 !important;
-    width: 75px !important;
-}
-
-/* Search Label */
-.search-label {
-    font-family: 'Geist Mono' !important;
-    font-size: 14px !important;
-    color: #fff;
-    display: block;
-}
-
-
-.titlebar-right > * {
-    display: none !important;
-}
 
 
 /* Command palette text input */
@@ -80,12 +54,4 @@
     margin-bottom: 10px !important;
 } */
 
-/* Remove background for lists */
-.monaco-list-rows {
-    background: transparent !important;
-}
 
-/* Command palette's input box placeholder. */
-.monaco-inputbox input::placeholder {
-    color: rgba(255, 255, 255, .3) !important;
-}
