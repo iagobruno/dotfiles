@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/iago/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -125,13 +125,26 @@ alias notepad='notepad.exe'
 alias edit='notepad.exe'
 alias docker-kill='docker stop $(docker ps -q)'
 alias docker-cleanup='docker rm -f $(docker ps -a -q) && docker volume rm $(docker volume ls -q) && docker image rm $(docker image ls -q) && docker network rm $(docker network ls -q)'
+alias ls="/usr/local/bin/ls++"
+alias cat="batcat"
 
+# NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun
+[ -s "/home/iago/.bun/_bun" ] && source "/home/iago/.bun/_bun"
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Insert blank line after command output
 function echo_blank() {
     echo
 }
 precmd_functions+=echo_blank
+
+# Definir diretório inicial
+if [[ "$PWD" == "$HOME" ]]; then
+  cd ~/'Área de trabalho'
+fi
