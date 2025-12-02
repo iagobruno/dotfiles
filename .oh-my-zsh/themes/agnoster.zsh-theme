@@ -204,7 +204,7 @@ prompt_user() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment 026 $CURRENT_FG '\uE5FF %~'
+  prompt_segment 026 $CURRENT_FG '\uE5FF %1~'
 }
 
 # Virtualenv: current working virtualenv
