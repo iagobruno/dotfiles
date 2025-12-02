@@ -127,6 +127,7 @@ alias docker-kill='docker stop $(docker ps -q)'
 alias docker-cleanup='docker rm -f $(docker ps -a -q) && docker volume rm $(docker volume ls -q) && docker image rm $(docker image ls -q) && docker network rm $(docker network ls -q)'
 alias ls="/usr/local/bin/ls++"
 alias cat="batcat"
+alias explorer="xdg-open"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
