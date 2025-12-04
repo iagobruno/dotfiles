@@ -1,7 +1,7 @@
 [alias]
 	st = status -sb
 	lg = log --pretty=format:'%Cred%h%Creset %C(bold)%cr%Creset %Cgreen<%an>%Creset %s' --max-count=30
-	cm = commit -m
+	cmt = commit -am
 
 [user]
 	name = Iago Bruno
